@@ -42,3 +42,21 @@
 		</tr>
 	</table>
 </div>
+<br/>
+<br/>
+
+### MySQL Query
+
+```
+SELECT * FROM `food_stations`
+	LEFTJOIN `section_fst_relations` WHERE `section_fst_relations`.`fst_id` = `food_stations`.`id`
+	LEFTJOIN `sections` WHERE `sections`.`id` = `section_fst_relations`.`section_id`
+	LEFTJOIN `user_section_relations` WHERE `user_section_relations`.`user_id` = `users`.`id`
+	WHERE `users`.`id` = "CURRENT_USER_ID"
+```
+
+<br/>
+
+<p>Backend receives CURRENT_USER_ID from frontend. This means this query is trigged only CURRENT_USER_ID. From CURRENT_USER_ID, we can know what section user is on. From SECTION_ID, we can know what food stations in this sections.</p>
+<p>"user_section_relations", "section_fst_relations" are intermediary tables. These tables are made based on my best practice.</p>
+
