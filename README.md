@@ -1,4 +1,4 @@
-# Database Architecture for Restaurant, Food Station in Stadium
+# Database Architecture for Restaurant: Food Station in Stadium
 
 ## Idea
 
@@ -12,6 +12,9 @@
 <p>1. How would you design solution to be able only allow customer to order from restaurant chains available in his section? Please write out database schemas.</p>
 
 <p>2. What are the possible situations you need to solve? Please write out database schemas.</p>
+
+## Solution
+The solution is [here](https://github.com/mountiv/simple-food-station-database-architecture/blob/main/database.md)
 
 ## Author
 
