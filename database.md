@@ -6,7 +6,7 @@
 	<table>
 		<tr>
 			<th>No</th>
-			<th>table namme</th>
+			<th>table name</th>
 			<th>fields</th>
 			<th>description</th>  
 		</tr>
@@ -18,7 +18,7 @@
 		</tr>
 		<tr>
 			<th>2</th>
-			<td>user_sections</td>
+			<td>user_section_relations</td>
 			<td>id, user_id, section_id</td>
 			<td>if user is enter the special section of stadium, user_id and section_id is saved in this table.</td>  
 		</tr>
